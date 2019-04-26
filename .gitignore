@@ -3,7 +3,5 @@ node_modules/
 
 #txt-files
 .sublime-gulp.cache
-gulpfile.js
 package-lock.json
-package.json
 .sublime-gulp.cache
