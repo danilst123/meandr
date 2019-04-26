@@ -38,7 +38,7 @@
 }
 @media screen and (max-width: 767px) {
   .header__title {
-    font-size: 36px;
+    font-size: 35px;
     line-height: 1.2;
   }
 }
