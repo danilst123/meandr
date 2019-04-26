@@ -1,0 +1,94 @@
+.features {
+  background: #F7F5FA;
+  padding: 80px 0;
+}
+@media screen and (max-width: 767px) {
+  .features {
+    padding: 30px 0;
+  }
+}
+.features__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .features__container {
+    display: block;
+  }
+}
+.features__items {
+  max-width: 974px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border: 1px solid #EDEDED;
+  border-bottom: none;
+  position: relative;
+  z-index: 2;
+  margin-top: -180px;
+}
+@media screen and (max-width: 767px) {
+  .features__items {
+    max-width: 100%;
+    margin-top: -100px;
+  }
+}
+.features__item {
+  min-height: 232px;
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 50px 90px 60px 60px;
+  border-bottom: 1px solid #EDEDED;
+  border-right: 1px solid #EDEDED;
+}
+@media screen and (max-width: 767px) {
+  .features__item {
+    width: 100%;
+    padding: 30px;
+    min-height: auto;
+  }
+}
+.features__item:nth-child(2n) {
+  border-right: none;
+}
+.features__item-title {
+  font-family: DIN Pro;
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #F47821;
+  margin-bottom: 12px;
+}
+.features__item-text {
+  font-family: DIN Pro;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  font-weight: 400;
+  color: #222222;
+}

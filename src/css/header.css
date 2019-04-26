@@ -43,6 +43,7 @@
   }
 }
 .header__text {
+  width: 100%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
