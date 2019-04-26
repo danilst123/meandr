@@ -1,0 +1,44 @@
+.btn-anim {
+	height: 54px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 30px;
+	padding-left: 20px;
+	text-decoration: none;
+	position: relative;
+
+	&:before {
+		content: '';
+		display: block;
+		height: 54px;
+		width: 54px;
+		border-radius: 27px;
+		transition: width 0.3s;
+		transition-timing-function: ease-out;
+		background: #878787;
+		opacity: 0.05;
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		left: 0;
+	}
+	&:hover:before {
+		width: 100%;
+	}
+
+	span {
+		font-family: Gilroy;
+		font-size: 16px;
+		font-weight: 900;
+		line-height: 20px;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #222222;
+	}
+
+	img {
+		margin-right: 12px;
+	}
+}
