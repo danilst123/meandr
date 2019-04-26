@@ -1,0 +1,105 @@
+.feedback {
+	background: #161616;
+	padding: 100px 0 120px;
+
+	&__container {
+		max-width: 758px;
+	}
+
+	&__title {
+		font-family: DIN Pro;
+		color: #FFFFFF;
+		font-size: 40px;
+		line-height: 52px;
+		font-weight: 400;
+		text-align: center;
+		letter-spacing: -0.02em;
+		margin-bottom: 60px;
+	}
+
+	&__fieldsets {
+		counter-reset: list1;
+		margin-bottom: -48px;
+	}
+
+	&__fieldset {
+		display: flex;
+		margin-bottom: 48px;
+
+		&:before {
+			counter-increment: list1;
+			content: counter(list1);
+			width: 64px;
+			height: 64px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 23px;
+			color: #F47821;
+			border-radius: 50%;
+			border: 1px solid rgba(247, 248, 250, 0.3);
+			margin-right: 28px;
+		}
+	}
+
+	&__label {
+		width: calc(100% - 92px);
+		display: block;
+		color: #fff;
+		margin-top: 20px;
+	}
+
+	&__field-title {
+		display: block;
+		width: 100%;
+		font-family: DIN Pro;
+		font-size: 16px;
+		line-height: 25px;
+		font-weight: 400;
+		letter-spacing: -0.01em;
+		color: #FFFFFF;
+		margin-bottom: 12px;
+
+	}
+
+	&__field, &__textarea {
+		width: 100%;
+		min-width: 100%;
+		max-width: 100%;
+		display: block;
+		border: none;
+		border-bottom: 1px solid rgba(247, 248, 250, 0.1);
+		background: none;
+		appearance: none;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 35px;
+		letter-spacing: -0.01em;
+		color: #fff;
+		transition: border-bottom-color 0.5s;
+		position: relative;
+
+		&:placeholder {
+			color: rgba(255, 255, 255, 0.3);
+			transition: all 0.3s;
+		}
+
+		&:focus {
+			border-bottom-color: #F47821;
+		}
+	}
+
+	&__field {
+		height: 60px;
+	}
+
+	&__textarea {
+		min-height: 95px;
+	}
+}
