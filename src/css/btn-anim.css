@@ -12,9 +12,14 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border: none;
+  background: none;
   padding-right: 30px;
   padding-left: 20px;
   text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   position: relative;
 }
 .btn-anim:before {
