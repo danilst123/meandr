@@ -574,11 +574,16 @@ body {
 }
 @media screen and (max-width: 767px) {
   .content-block {
-    padding: 30px 20px;
+    padding: 30px 0;
   }
 }
 .content-block__container {
   max-width: 775px;
+}
+@media screen and (max-width: 767px) {
+  .content-block__container {
+    padding: 0 30px;
+  }
 }
 .content-block__container > :last-child {
   margin-bottom: 0;
@@ -795,12 +800,6 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 48px;
-}
-@media screen and (max-width: 767px) {
-  .feedback__fieldset {
-    margin-bottom: 30px;
-  }
 }
 .feedback__fieldset:before {
   counter-increment: list1;
@@ -843,7 +842,7 @@ body {
   width: calc(100% - 92px);
   display: block;
   color: #fff;
-  margin-top: 18px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 767px) {
   .feedback__label {
@@ -920,13 +919,14 @@ body {
   }
 }
 .feedback__textarea {
-  min-height: auto;
+  min-height: 90px;
   height: auto;
   padding: 12px 0;
 }
 @media screen and (max-width: 767px) {
   .feedback__textarea {
     font-size: 14px;
+    min-height: 60px;
   }
 }
 .feedback__btn {
@@ -939,6 +939,28 @@ body {
   .feedback__btn {
     width: 50%;
     margin-right: auto;
+  }
+}
+.feedback__error {
+  height: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: red;
+}
+@media screen and (max-width: 767px) {
+  .feedback__error {
+    height: 30px;
   }
 }
 .btn {
@@ -973,6 +995,13 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #F47821;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #e0e0e0;
 }
 .btn-anim {
   height: 54px;
@@ -997,6 +1026,7 @@ body {
   -moz-appearance: none;
   appearance: none;
   position: relative;
+  cursor: pointer;
 }
 .btn-anim:before {
   content: '';

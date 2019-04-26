@@ -30,4 +30,11 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #F47821;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #e0e0e0;
 }
