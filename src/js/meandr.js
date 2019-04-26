@@ -39,7 +39,7 @@ $(function() {
 		}
 
 		if (emailVal == "") {
-			email.next().text('Заполните телефон');
+			email.next().text('Заполните почту');
 		} else if (emailVal.indexOf('@') == -1) {
 			email.next().text('Неверный формат почты');
 		} else {
